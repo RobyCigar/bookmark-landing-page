@@ -158,7 +158,7 @@
 
 
 
-    <content class="faq">
+    <content class="faq-title">
       <h2>Frequently Asked Questions</h2>
       <p>
         Here are some of our FAQs. If you have any other questions you’d like
@@ -169,8 +169,8 @@
     <content class="faqs">
     <!-- Question 1 -->
     <div>
-      <div onclick="toggleQuestion('a1')" class="q">
-        <h4>What is Bookmark?</h4>
+      <div  class="q">
+        <h4 onclick="toggleQuestion(event, 'a1')">What is Bookmark?</h4>
         <img src="./images/icon-arrow.svg" alt="">
       </div>
       <!-- Answer 1 -->
@@ -184,7 +184,7 @@
     <!-- Question 2 -->
     <div>
       <div class="q">
-      <h4 onclick="toggleQuestion('a2')">How can I request a new browser?</h4>
+      <h4 onclick="toggleQuestion(event, 'a2')">How can I request a new browser?</h4>
         <img src="./images/icon-arrow.svg" alt="">
       </div>
       <!-- Answer 2 -->
@@ -200,7 +200,7 @@
     <!-- Question 3 -->
     <div >
       <div class="q">
-      <h4 onclick="toggleQuestion('a3')" >Is there a mobile app?</h4>
+      <h4 onclick="toggleQuestion(event, 'a3')" >Is there a mobile app?</h4>
         <img src="./images/icon-arrow.svg" alt="">
       </div>
 
@@ -216,7 +216,7 @@
     <!-- Question 4 -->
 
     <div>
-      <div onclick="toggleQuestion('a4')" class="q">
+      <div onclick="toggleQuestion(event, 'a4')" class="q">
         <h4>What about other Chromium browsers?</h4>
         <img src="./images/icon-arrow.svg" alt="">
       </div>
@@ -233,26 +233,34 @@
 
 
 
-    <button>More Info</button>
+    <button class="more-info">More Info</button>
 
-    <div>35,000+ already joined</div>
-    <div>Stay up-to-date with what we’re doing</div>
-    <button>Contact Us</button>
-    <div>
-      <ul>
+    <footer class="foot">
+      <h3>35,000+ already joined</h3>
+      <p>Stay up-to-date with what we’re doing</p>
+      <input class="input" type="text">
+      <button>Contact Us</button>
+    </footer>
+    <div class="foot-nav">
+      <ul class="foot-links">
+        <li><img src="./images/logo-bookmark-white.svg" alt=""></li>
         <li>Features</li>
         <li>Pricing</li>
         <li>Contact</li>
       </ul>
+      <ul class="foot-icon">
+        <li><img src="./images/icon-facebook.svg" alt=""></li>
+        <li><img src="./images/icon-twitter.svg" alt=""></li>
+      </ul>
     </div>
-    <footer>
+    <div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">@RobyCigar</a>.
       </p>
-    </footer>
+    </div>
 
     <script src="./script.js"></script>
   </body>

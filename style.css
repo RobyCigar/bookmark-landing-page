@@ -17,6 +17,10 @@
 	font-family: var(--rubik);
 }
 
+body > * {
+	overflow: hidden;
+}
+
 /*		NAVBAR		*/
 
 .nav {
@@ -346,21 +350,168 @@
 
 /*		FAQ		*/
 
+.faq-title {
+	display: block;
+	text-align: center;
+	margin: 100px 20%;
+}
+
+.faq-title > h2 {
+	margin: 30px 0;
+}
+
+.faq-title > p {
+	opacity: 0.6;
+}
+
 .q {
-	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 }
 
+.q > h4 {
+	cursor: pointer;
+}
+
 .q > img {
 	align-self: center;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
 }
+
+.a {
+	margin: 20px 0;
+	opacity: 0.6;
+}
+
 
 .faqs > div {
 	margin: 20px auto;
 	width: 40%;
 }
 
+#a1 {
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+
+.rotate {
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+.more-info {
+	display: block;
+	margin: 50px auto;
+	padding: 10px;
+	width: 150px;
+	color: white;
+	background: var(--blue);
+	font-weight: 500;
+	border-radius: 8px;
+	cursor: pointer;
+	border: 2px solid var(--blue);
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+
+/*		FOOTER 		*/
+
+.foot {
+	background: var(--blue);
+	height: 300px;
+	color: white;
+	text-align: center;
+	padding: 3% 5%;
+}
+
+.foot > h3 {
+	display: block;
+	margin: 30px 0;
+	text-transform: uppercase;
+}
+
+.foot > p {
+	font-size: 30px;
+	font-weight: 500;
+	margin: 30px;
+}
+
+.foot > button {
+	padding: 10px 15px;
+	background: var(--soft-red);
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	    -ms-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out;
+}
+
+.foot > button:hover {
+	background: white;
+	color: black;
+}
+
+.input {
+	padding: 10px 2px;
+	margin: 0 20px;
+}
+
+.more-info:hover {
+	background: white;
+	color: var(--gray);
+}
+
+.foot-nav {
+	background: var(--dark-blue);
+	display: flex;
+	justify-content: space-between;
+	padding: 4% 5%;
+}
+
+.foot-nav > ul {
+	display: flex;
+	align-items: center;
+}
+
+.foot-links > li {
+	margin: 0 10px;
+	font-weight: 500;
+	color: white;
+}
+
+.foot-icon > li {
+	margin: 0 20px;
+}
+
+
 .attribution {
-	margin-bottom: 1000px;
+	text-align: center;
+	color: white;
+	background: var(--dark-blue);
+}
+
+.attribution > a {
+	color: yellow;
 }

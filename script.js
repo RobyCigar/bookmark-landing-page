@@ -18,10 +18,13 @@ function showTab(e, contentIndex) {
 	e.currentTarget.className += " underscore";
 }
 
-function toggleQuestion(id) {
+function toggleQuestion(e, id) {
+	console.log(e.target.nextElementSibling.className)
 	if (document.getElementById(id).style.display == "none") {
 		document.getElementById(id).style.display = "";
+		e.target.nextElementSibling.className = 'rotate'
 	} else {
 		document.getElementById(id).style.display = "none";
+		e.target.nextElementSibling.className = ''
 	}
 }
