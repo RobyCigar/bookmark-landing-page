@@ -399,6 +399,7 @@ body > * {
 .faqs > div {
 	margin: 20px auto;
 	width: 40%;
+	min-width: 300px;
 }
 
 #a1 {
@@ -543,5 +544,17 @@ body > * {
 
 	.tab1, .tab2, .tab3 {
 		flex-direction: column;
+	}
+
+	.foot-nav {
+		flex-direction: column;
+	}
+
+	.foot-nav > ul {
+		flex-direction: column;
+	}
+
+	.foot-nav > ul > li {
+		margin: 10px 0;
 	}
 }
