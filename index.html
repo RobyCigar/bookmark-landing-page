@@ -18,7 +18,8 @@
   <body>
     <nav class="nav">
       <img class="nav-logo" src="./images/logo-bookmark.svg" alt="" />
-      <img class="burger" src="./images/icon-hamburger.svg" alt="">
+      <img onclick="burger(event)" class="burger" src="./images/icon-hamburger.svg" alt="">
+      <img onclick="hideCloseIcon(event)" class="close-icon hide" src="./images/icon-close.svg" alt="">
       <ul class="nav-link">
         <li class="link">Features</li>
         <li class="link">Pricing</li>
@@ -75,7 +76,7 @@
 
     <content class="tabcontent">
       <div class="tab1">
-        <div>
+        <div class="tab-img">
           <img src="./images/illustration-features-tab-1.svg" alt="" />
         </div>
         <div class="tab-text">
@@ -92,7 +93,7 @@
 
     <content class="tabcontent hide">
       <div class="tab2">
-        <div>
+        <div class="tab-img">
           <img src="./images/illustration-features-tab-2.svg" alt="" />
         </div>
         <div class="tab-text">
@@ -108,7 +109,7 @@
 
     <content class="tabcontent hide">
       <div class="tab3">
-        <div>
+        <div class="tab-img">
           <img src="./images/illustration-features-tab-3.svg" alt="" />
         </div>
         <div class="tab-text">

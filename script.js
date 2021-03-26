@@ -1,5 +1,3 @@
-let tab = document.querySelectorAll(".tabs > li");
-
 function showTab(e, contentIndex) {
 	var i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName("tabcontent");
@@ -19,7 +17,6 @@ function showTab(e, contentIndex) {
 }
 
 function toggleQuestion(e, id) {
-	console.log(e.target.nextElementSibling.className)
 	if (document.getElementById(id).style.display == "none") {
 		document.getElementById(id).style.display = "";
 		e.target.nextElementSibling.className = 'rotate'
@@ -27,4 +24,25 @@ function toggleQuestion(e, id) {
 		document.getElementById(id).style.display = "none";
 		e.target.nextElementSibling.className = ''
 	}
+}
+
+function burger(e) {
+	const closeIcon = document.getElementsByClassName('close-icon')[0]
+	const activateCloseIcon = closeIcon.className.replace("hide", "")
+
+	if(e.target.className == "burger") {
+		// activate the close icon
+		closeIcon.className = activateCloseIcon;
+		// hide the burger
+		e.target.className = "hide"
+
+	} 
+
+	// add element 
+}
+
+function hideCloseIcon(e) {
+	const burger = document.getElementsByClassName("hide")[0]
+	burger.className = "burger"
+	e.target.className += "hide"
 }
